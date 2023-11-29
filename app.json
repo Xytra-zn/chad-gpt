@@ -1,13 +1,13 @@
 {
-  "project_info": {
-    "name": "XYTRA GPT",
-    "description": "A Telegram bot using GPT API",
-    "version": "1.0"
-  },
-  "bot_credentials": {
-    "telegram_bot_token": "YOUR_TELEGRAM_BOT_TOKEN"
-  },
-  "api_credentials": {
-    "gpt_api_url": "https://chatgpt.apinepdev.workers.dev/?question=YOUR_CONVERSATIONAL_TEXT"
+  "name": "XYTRA GPT",
+  "description": "A Telegram bot using GPT API",
+  "version": "1.0",
+  "env": {
+    "TELEGRAM_BOT_TOKEN": {
+      "description": "Telegram Bot Token"
+    },
+    "GPT_API_URL": {
+      "description": "GPT API URL"
+    }
   }
 }
