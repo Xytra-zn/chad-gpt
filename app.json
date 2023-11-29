@@ -3,37 +3,11 @@
     "name": "XYTRA GPT",
     "description": "A Telegram bot using GPT API",
     "version": "1.0"
-  },
-  "api_credentials": {
-    "gpt_api_url": "YOUR_GPT_API_URL",
-    "gpt_api_key": "YOUR_GPT_API_KEY"
-  },
+  }
   "bot_credentials": {
     "telegram_bot_token": "YOUR_TELEGRAM_BOT_TOKEN"
   },
-  "dependencies": {
-    "python-telegram-bot": "13.7",
-    "requests": "2.26.0",
-    "python-dotenv": "0.19.1"
-  },
-  "dev_dependencies": {
-    "pytest": "7.4.3"
-  },
-  "scripts": {
-    "start": "python your_bot_file.py",
-    "test": "pytest"
-  },
-  "engines": {
-    "python": "3.8.x"
-  },
-  "license": "MIT",
-  "gitignore": [
-    "__pycache__/",
-    "*.pyc",
-    "*.pyo",
-    "*.pyd",
-    "*.db",
-    "*.sqlite3",
-    "*.env"
-  ]
+  "api_credentials": {
+    "gpt_api_url": "https://chatgpt.apinepdev.workers.dev/?question=YOUR_CONVERSATIONAL_TEXT"
+  }
 }
