@@ -3,7 +3,7 @@
     "name": "XYTRA GPT",
     "description": "A Telegram bot using GPT API",
     "version": "1.0"
-  }
+  },
   "bot_credentials": {
     "telegram_bot_token": "YOUR_TELEGRAM_BOT_TOKEN"
   },
