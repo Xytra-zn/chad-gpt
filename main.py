@@ -1,18 +1,15 @@
 import os
+import requests
 from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
-import json
 
 # Load environment variables from .env file
 load_dotenv()
 
-# Load API URL and Telegram bot token from app.json
-with open("app.json", "r") as app_file:
-    app_data = json.load(app_file)
-
-TELEGRAM_BOT_TOKEN = app_data.get("bot_credentials", {}).get("telegram_bot_token", "")
-GPT_API_URL = app_data.get("api_credentials", {}).get("gpt_api_url", "")
+# Set Telegram bot token and GPT API URL directly
+TELEGRAM_BOT_TOKEN = "6979206212:AAHqIRUb7Ng_i1QM0sVEQlkOCKuWeSY7-Rk"
+GPT_API_URL = "https://chatgpt.apinepdev.workers.dev"
 
 # Define /gpt command handler
 def gpt_command(update: Update, context: CallbackContext) -> None:
