@@ -1,5 +1,4 @@
 import os
-import requests
 from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
@@ -12,8 +11,8 @@ load_dotenv()
 with open("app.json", "r") as app_file:
     app_data = json.load(app_file)
 
-GPT_API_URL = app_data.get("gpt_api_url", "")
-TELEGRAM_BOT_TOKEN = app_data.get("telegram_bot_token", "")
+TELEGRAM_BOT_TOKEN = app_data.get("bot_credentials", {}).get("telegram_bot_token", "")
+GPT_API_URL = app_data.get("api_credentials", {}).get("gpt_api_url", "")
 
 # Define /gpt command handler
 def gpt_command(update: Update, context: CallbackContext) -> None:
@@ -62,4 +61,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-          
