@@ -8,7 +8,7 @@ from telegram.ext import Updater, CommandHandler, CallbackContext
 load_dotenv()
 
 # Set Telegram bot token and GPT API URL directly
-TELEGRAM_BOT_TOKEN = "6979206212:AAHqIRUb7Ng_i1QM0sVEQlkOCKuWeSY7-Rk"
+TELEGRAM_BOT_TOKEN = "6640979701:AAHR02vh5bjVK0zdOudFZqsk4dhwWrht0Zs"
 GPT_API_URL = "https://chatgpt.apinepdev.workers.dev"
 
 # Define /gpt command handler
